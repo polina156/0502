@@ -7,7 +7,7 @@
 body {
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    
+    overflow: hidden;
 }
 .container{
     max-width: 1100px;
@@ -17,8 +17,7 @@ body {
 header {
     background-color:#081eea;
     padding: 18px 0;
-    align-items: center;
-    justify-content: space-between;
+    
 }
 .header-inner{
     display: flex;
@@ -38,7 +37,7 @@ text-decoration: none;
 margin-left: 25px;
 font-size: 15px;
 }
-/* Заголовки страницы */
+
 .page-title {
     text-align: center;
     font-size: 32px;
@@ -52,12 +51,12 @@ font-size: 15px;
     font-size: 15px;
 }
 
-/* Карточки */
+
 .cards {
     display: flex;
-    gap: 20px;
+    justify-content: center; 
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Чтобы карточки переносились, если экран узкий */
+    flex-wrap: wrap;
 }
 
 .card {
@@ -88,4 +87,54 @@ font-size: 15px;
     font-family: 'Courier New', monospace;
     font-size: 13px;
     color: #333;
+}
+.example {
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.example h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.example > p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.flex-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #dce6f7;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: #0056d6;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: #0a2a52;
+    color: hwb(0 100% 0%);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 14px;
 }
